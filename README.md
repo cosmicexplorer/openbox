@@ -1,0 +1,4 @@
+openbox
+=======
+
+lxde openbox config
