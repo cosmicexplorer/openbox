@@ -294,6 +294,35 @@
     </action>
   </keybind>
 
+	<!-- keybindings for music control -->
+	<keybind key="XF86AudioPlay">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>banshee</name>
+			</startupnotify>
+			<command>banshee --toggle-playing</command>
+		</action>
+	</keybind>
+	<keybind key="XF86AudioNext">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>banshee</name>
+			</startupnotify>
+			<command>banshee --next</command>
+		</action>
+	</keybind>
+	<keybind key="XF86AudioPrev">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>banshee</name>
+			</startupnotify>
+			<command>banshee --previous</command>
+		</action>
+	</keybind>
+
 
   <!--keybindings for LXPanel -->
   <keybind key="A-F2">
