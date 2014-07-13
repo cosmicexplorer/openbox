@@ -203,6 +203,33 @@
 	<keybind key="W-r">
 		<action name="Resize"/>
 	</keybind>
+	<keybind key="W-Up">
+		<action name="MaximizeFull"/>
+	</keybind>
+	<keybind key="W-Down">
+		<action name="UnmaximizeFull"/>
+	</keybind>
+	<keybind key="W-space">
+		<action name="iconify"/>
+	</keybind>
+	<!-- SCREEN RESOLUTION-DEPENDENT -->
+	<keybind key="W-Left">
+		<action name="UnmaximizeFull"/>
+		<action name="MaximizeVert"/>
+		<action name="MoveResizeTo">
+			<width>970</width>
+		</action>
+		<action name="MoveToEdgeWest"/>
+	</keybind>
+	<keybind key="W-Right">
+		<action name="UnmaximizeFull"/>
+		<action name="MaximizeVert"/>
+		<action name="MoveResizeTo">
+			<width>960</width>
+		</action>
+		<action name="MoveToEdgeEast"/>
+	</keybind>
+
 
   <!-- Keybindings for window switching -->
   <keybind key="A-Tab">
