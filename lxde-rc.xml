@@ -181,9 +181,9 @@
     <action name="ToggleShowDesktop"/>
   </keybind>
 
-  <keybind key="C-A-d">
-    <action name="ToggleShowDesktop"/>
-  </keybind>
+  <!-- <keybind key="C-A-d"> -->
+  <!--   <action name="ToggleShowDesktop"/> -->
+  <!-- </keybind> -->
 
   <!-- Keybindings for windows -->
   <keybind key="A-F4">
