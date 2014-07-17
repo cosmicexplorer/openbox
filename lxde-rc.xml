@@ -273,6 +273,17 @@ and back in -->
         </startupnotify>
         <command>gnome-calculator</command>
       </action>
+  </keybind>
+
+
+    <keybind key="W-h">
+        <action name="Execute">
+            <startupnotify>
+                <enabled>true</enabled>
+                <name>home-folder</name>
+            </startupnotify>
+            <command>pcmanfm</command>
+        </action>
     </keybind>
 
     <!-- wireless connection manager gui -->
