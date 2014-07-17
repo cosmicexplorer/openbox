@@ -326,6 +326,16 @@ and back in -->
       </action>
     </keybind>
 
+    <keybind key="W-a">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>fix_alsa</name>
+        </startupnotify>
+        <command>alsactl init</command>
+      </action>
+    </keybind>
+
 	  <!-- keybindings for music control -->
 	  <keybind key="XF86AudioPlay">
 		  <action name="Execute">
