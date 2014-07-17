@@ -275,6 +275,7 @@ and back in -->
       </action>
     </keybind>
 
+    <!-- wireless connection manager gui -->
     <keybind key="W-w">
       <action name="Execute">
         <startupnotify>
@@ -282,6 +283,17 @@ and back in -->
           <name>ConnManSomethingoroTher</name>
         </startupnotify>
         <command>cmst</command>
+      </action>
+    </keybind>
+
+    <!-- run scrot, then press print screen to save screenshot in home -->
+    <keybind key="W-s">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>scrot</name>
+        </startupnotify>
+        <command>scrot</command>
       </action>
     </keybind>
 
