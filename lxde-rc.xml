@@ -176,11 +176,6 @@ and back in -->
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
 
-    <!-- Keybindings for desktop switching -->
-    <keybind key="W-d">
-      <action name="ToggleShowDesktop"/>
-    </keybind>
-
     <!-- <keybind key="C-A-d"> -->
     <!--   <action name="ToggleShowDesktop"/> -->
     <!-- </keybind> -->
@@ -197,10 +192,15 @@ and back in -->
     <keybind key="A-space">
       <action name="ShowMenu"><menu>client-menu</menu></action>
     </keybind>
+		<keybind key="W-a">
+			<action name="Execute">
+				<command>~/.config/openbox/move_cursor_to_center_of_window.sh</command>
+			</action>
+		</keybind>
 	  <keybind key="W-m">
 		  <action name="Move"/>
 	  </keybind>
-	  <keybind key="W-r">
+	  <keybind key="W-n">
 		  <action name="Resize"/>
 	  </keybind>
 	  <keybind key="W-Up">
@@ -265,7 +265,7 @@ and back in -->
       </action>
     </keybind>
 
-    <keybind key="W-g">
+    <keybind key="W-c">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
