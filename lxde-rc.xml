@@ -200,7 +200,7 @@ and back in -->
 	  <keybind key="W-m">
 		  <action name="Move"/>
 	  </keybind>
-	  <keybind key="W-n">
+	  <keybind key="W-r">
 		  <action name="Resize"/>
 	  </keybind>
 	  <keybind key="W-Up">
@@ -291,9 +291,9 @@ and back in -->
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>ConnManSomethingoroTher</name>
+          <name>wicd-startup</name>
         </startupnotify>
-        <command>cmst</command>
+        <command>wicd-gtk</command>
       </action>
     </keybind>
 
@@ -334,16 +334,6 @@ and back in -->
           <name>amixer</name>
         </startupnotify>
         <command>amixer set Master toggle</command>
-      </action>
-    </keybind>
-
-    <keybind key="W-a">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>fix_alsa</name>
-        </startupnotify>
-        <command>alsactl init</command>
       </action>
     </keybind>
 
