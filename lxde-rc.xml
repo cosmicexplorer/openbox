@@ -291,9 +291,9 @@ and back in -->
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>wicd-startup</name>
+          <name>connman-start</name>
         </startupnotify>
-        <command>wicd-gtk</command>
+        <command>cmst</command>
       </action>
     </keybind>
 
