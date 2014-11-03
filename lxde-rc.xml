@@ -259,9 +259,9 @@ and back in -->
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>LXTerminal</name>
+          <name>XTerm</name>
         </startupnotify>
-        <command>lxterminal</command>
+        <command>xterm</command>
       </action>
     </keybind>
 
