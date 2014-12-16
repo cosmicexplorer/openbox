@@ -198,6 +198,16 @@ and back in -->
         <command>~/.config/openbox/move_cursor_to_center_of_window.sh</command>
       </action>
     </keybind>
+    <!-- <keybind key="XF86MonBrightnessUp"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>xbacklight -inc 5</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
+    <!-- <keybind key="XF86MonBrightnessDown"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>xbacklight -dec 5</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <keybind key="W-m">
       <action name="Move"/>
     </keybind>
