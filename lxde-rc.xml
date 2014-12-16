@@ -244,6 +244,15 @@ and back in -->
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
+    <keybind key="W-o">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>synapse</name>
+        </startupnotify>
+        <command>synapse</command>
+      </action>
+    </keybind>
     <keybind key="W-p">
       <action name="Execute">
         <startupnotify>
