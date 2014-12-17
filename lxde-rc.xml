@@ -203,6 +203,12 @@ and back in -->
         <command>~/.config/openbox/toggle_touchpad.sh</command>
       </action>
     </keybind>
+    <!-- reload mouse if scrolling gets fucked -->
+    <keybind key="W-s">
+      <action name="Execute">
+        <command>~/.config/openbox/restart_mouse_driver.sh</command>
+      </action>
+    </keybind>
     <!-- <keybind key="XF86MonBrightnessUp"> -->
     <!--   <action name="Execute"> -->
     <!--     <command>xbacklight -inc 5</command> -->
