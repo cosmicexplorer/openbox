@@ -339,7 +339,7 @@ and back in -->
       </action>
     </keybind>
     <!-- run scrot, then press print screen to save screenshot in home -->
-    <keybind key="W-s">
+    <keybind key="W-l">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
