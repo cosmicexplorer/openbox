@@ -198,6 +198,11 @@ and back in -->
         <command>~/.config/openbox/move_cursor_to_center_of_window.sh</command>
       </action>
     </keybind>
+    <keybind key="W-g">         <!--toggle trackpad-->
+      <action name="Execute">
+        <command>~/.config/openbox/toggle_touchpad.sh</command>
+      </action>
+    </keybind>
     <!-- <keybind key="XF86MonBrightnessUp"> -->
     <!--   <action name="Execute"> -->
     <!--     <command>xbacklight -inc 5</command> -->
