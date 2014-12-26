@@ -348,14 +348,14 @@ and back in -->
         <command>scrot</command>
       </action>
     </keybind>
-    <!-- keybindings for volume -->
+    keybindings for volume
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
           <name>amixer</name>
         </startupnotify>
-        <command>zsh -c /home/cosmicexplorer/.config/openbox/increase_appropriate_volume.sh down</command>
+        <command>amixer -c 1 set Master 5-</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
@@ -364,7 +364,7 @@ and back in -->
           <enabled>true</enabled>
           <name>amixer</name>
         </startupnotify>
-        <command>zsh -c /home/cosmicexplorer/.config/openbox/increase_appropriate_volume.sh up</command>
+        <command>amixer -c 1 set Master 5+</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
@@ -376,7 +376,7 @@ and back in -->
         <command>amixer set Master toggle</command>
       </action>
     </keybind>
-    <!-- keybindings for music control -->
+    keybindings for music control
     <keybind key="XF86AudioPlay">
       <action name="Execute">
         <startupnotify>
