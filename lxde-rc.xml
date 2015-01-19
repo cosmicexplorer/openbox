@@ -209,6 +209,12 @@ and back in -->
         <command>~/.config/openbox/restart_mouse_driver.sh</command>
       </action>
     </keybind>
+    <!-- TODO: make menu key work -->
+    <keybind key="W-j">
+      <action name="Execute">
+        <command>xdotool key Menu</command>
+      </action>
+    </keybind>
     <!-- <keybind key="XF86MonBrightnessUp"> -->
     <!--   <action name="Execute"> -->
     <!--     <command>xbacklight -inc 5</command> -->
