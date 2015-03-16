@@ -198,17 +198,19 @@ and back in -->
         <command>~/.config/openbox/move_cursor_to_center_of_window.sh</command>
       </action>
     </keybind>
-    <keybind key="W-g">         <!--toggle trackpad-->
-      <action name="Execute">
-        <command>~/.config/openbox/toggle_touchpad.sh</command>
-      </action>
-    </keybind>
+    <!-- removed because it failed once and i'm scared now -->
+    <!-- toggle trackpad -->
+    <!-- <keybind key="W-g"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>~/.config/openbox/toggle_touchpad.sh</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <!-- reload mouse if scrolling gets fucked -->
-    <keybind key="W-s">
-      <action name="Execute">
-        <command>~/.config/openbox/restart_mouse_driver.sh</command>
-      </action>
-    </keybind>
+    <!-- <keybind key="W-s"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>~/.config/openbox/restart_mouse_driver.sh</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <!-- TODO: make menu key work -->
     <keybind key="W-j">
       <action name="Execute">
