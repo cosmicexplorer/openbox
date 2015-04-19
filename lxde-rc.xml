@@ -306,7 +306,7 @@ and back in -->
           <enabled>true</enabled>
           <name>emacs</name>
         </startupnotify>
-        <command>emacs -l /home/cosmicexplorer/.emacs.d/.emacs</command>
+        <command>emacs</command>
       </action>
     </keybind>
     <keybind key="C-A-t">
