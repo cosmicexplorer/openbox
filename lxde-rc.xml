@@ -183,6 +183,9 @@ and back in -->
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
+    <keybind key="W-q">
+      <action name="Close"/>
+    </keybind>
     <keybind key="A-Escape">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
