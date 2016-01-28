@@ -235,9 +235,9 @@ and back in -->
   <keybind key="XF86AudioRaiseVolume"><action name="Execute"><startupnotify><enabled>true</enabled><name>amixer</name></startupnotify><command>amixer -c 1 set Master 5+</command></action></keybind>
   <keybind key="XF86AudioMute"><action name="Execute"><startupnotify><enabled>true</enabled><name>amixer</name></startupnotify><command>amixer set Master toggle</command></action></keybind>
   keybindings for music control
-  <keybind key="XF86AudioPlay"><action name="Execute"><startupnotify><enabled>true</enabled><name>toggle-play-pause</name></startupnotify><command>rhythmbox-client --play-pause</command></action></keybind>
-  <keybind key="XF86AudioNext"><action name="Execute"><startupnotify><enabled>true</enabled><name>next track</name></startupnotify><command>rhythmbox-client --next</command></action></keybind>
-  <keybind key="XF86AudioPrev"><action name="Execute"><startupnotify><enabled>true</enabled><name>previous track</name></startupnotify><command>rhythmbox-client --previous</command></action></keybind>
+  <keybind key="XF86AudioPlay"><action name="Execute"><startupnotify><enabled>true</enabled><name>banshee</name></startupnotify><command>amarok --play-pause</command></action></keybind>
+  <keybind key="XF86AudioNext"><action name="Execute"><startupnotify><enabled>true</enabled><name>banshee</name></startupnotify><command>amarok --next</command></action></keybind>
+  <keybind key="XF86AudioPrev"><action name="Execute"><startupnotify><enabled>true</enabled><name>banshee</name></startupnotify><command>amarok --previous</command></action></keybind>
   <!--keybindings for LXPanel -->
   <keybind key="A-F2"><action name="Execute"><command>lxpanelctl run</command></action></keybind>
   <keybind key="C-Escape"><action name="Execute"><command>lxpanelctl menu</command></action></keybind>
