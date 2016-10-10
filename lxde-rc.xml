@@ -192,6 +192,16 @@ and back in -->
   <command>xbacklight -inc 5</command>  </action></keybind>
   <keybind key="XF86MonBrightnessDown">  <action name="Execute">
   <command>xbacklight -dec 5</command>  </action></keybind>
+  <keybind key="XF86Search">
+    <action name="Execute">
+      <command>xbacklight -set 1</command>
+    </action>
+  </keybind>
+  <keybind key="W-XF86Search">
+    <action name="Execute">
+      <command>xbacklight -set 100</command>
+    </action>
+  </keybind>
   <keybind key="W-m"><action name="Move"/></keybind>
   <keybind key="W-r"><action name="Resize"/></keybind>
   <keybind key="W-Up"><action name="MaximizeFull"/></keybind>
