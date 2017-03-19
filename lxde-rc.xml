@@ -231,7 +231,7 @@ and back in -->
   stuff</name></startupnotify><command>gksu
   gnome-control-center</command></action></keybind>
   <keybind key="W-i"><action
-          name="Execute"><startupnotify><enabled>true</enabled><name>emacs</name></startupnotify><command>~/.emacs.d/byte-compile-everything.sh</command></action></keybind>
+                         name="Execute"><startupnotify><enabled>true</enabled><name>emacs</name></startupnotify><command>emacs</command></action></keybind>
   <keybind key="C-A-t"><action
                            name="Execute"><startupnotify><enabled>true</enabled><name>XTerm</name></startupnotify><command>xterm</command></action></keybind>
   <keybind key="W-c"><action
