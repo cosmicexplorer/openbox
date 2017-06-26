@@ -741,6 +741,36 @@ and back in -->
           >amarok --previous</command
         ></action
       ></keybind
+      >
+  <keybind
+        key="XF86KbdBrightnessDown"
+      ><action
+          name="Execute"
+        ><startupnotify
+          ><enabled
+            >true</enabled
+          ><name
+            >amarok</name
+          ></startupnotify
+        ><command
+          >~/.config/openbox/kb-light.py -</command
+        ></action
+      ></keybind
+      >
+  <keybind
+        key="XF86KbdBrightnessUp"
+      ><action
+          name="Execute"
+        ><startupnotify
+          ><enabled
+            >true</enabled
+          ><name
+            >amarok</name
+          ></startupnotify
+        ><command
+          >~/.config/openbox/kb-light.py +</command
+        ></action
+      ></keybind
     >
   <keybind
         key="W-v"
