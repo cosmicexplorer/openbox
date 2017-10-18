@@ -750,10 +750,10 @@ and back in -->
           ><enabled
             >true</enabled
           ><name
-            >amarok</name
+            >kbd-brightness</name
           ></startupnotify
         ><command
-          >~/.config/openbox/kb-light.py -</command
+          >~/.config/openbox/kb-light.py -5</command
         ></action
       ></keybind
       >
@@ -765,10 +765,10 @@ and back in -->
           ><enabled
             >true</enabled
           ><name
-            >amarok</name
+            >kbd-brightness</name
           ></startupnotify
         ><command
-          >~/.config/openbox/kb-light.py +</command
+          >~/.config/openbox/kb-light.py +5</command
         ></action
       ></keybind
     >
@@ -780,7 +780,7 @@ and back in -->
           ><enabled
             >true</enabled
           ><name
-            >amarok</name
+            >shift-ins-paste</name
           ></startupnotify
         ><command
           >xdotool click 2</command

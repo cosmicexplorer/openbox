@@ -30,6 +30,10 @@ if __name__ == '__main__':
             # ./kb-light.py (-|--down) to decrement
             print(kb_light_set(-1))
         else:
-            print("Unknown argument:", argv[1])
+            try:
+                delta = int(argv[1])
+                print(kb_light_set(delta))
+            except ValueError:
+                print("Unknown argument:", argv[1])
     else:
         print("Script takes exactly one argument.", len(argv[1:]), "arguments provided.")
