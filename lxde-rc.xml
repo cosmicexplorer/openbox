@@ -527,22 +527,6 @@ and back in -->
         ></action
       ></keybind
     ><keybind
-        key="W-t"
-      ><action
-          name="Execute"
-        ><startupnotify
-          ><enabled
-            >true</enabled
-          ><name
-            >date
-  stuff</name
-          ></startupnotify
-        ><command
-          >gksu
-  gnome-control-center</command
-        ></action
-      ></keybind
-    ><keybind
         key="W-i"
       ><action
           name="Execute"
