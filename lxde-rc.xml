@@ -493,12 +493,12 @@ and back in -->
           name="MoveToEdgeEast"
       /></keybind
     ><!-- Keybindings for window switching --><keybind
-        key="A-Tab"
+        key="W-Tab"
       ><action
           name="NextWindow"
       /></keybind
     ><keybind
-        key="A-S-Tab"
+        key="W-S-Tab"
       ><action
           name="PreviousWindow"
       /></keybind
@@ -513,7 +513,7 @@ and back in -->
         ></action
       ></keybind
     ><!-- Keybindings for running applications --><keybind
-        key="W-o"
+        key="A-o"
       ><action
           name="Execute"
         ><startupnotify
@@ -786,7 +786,7 @@ and back in -->
           >xdotool click 2</command
         ></action
       ></keybind
-    >
+      >
   <!--keybindings for LXPanel -->
   <keybind
         key="A-F2"
