@@ -376,7 +376,7 @@ and back in -->
         ></action
       ></keybind
     ><keybind
-        key="W-a"
+        key="A-a"
       ><action
           name="Execute"
         ><command
@@ -384,7 +384,7 @@ and back in -->
         ></action
       ></keybind
     ><keybind
-        key="W-j"
+        key="A-j"
       ><action
           name="Execute"
         ><command
@@ -416,7 +416,7 @@ and back in -->
         ></action
       ></keybind
     ><keybind
-        key="W-XF86Search"
+        key="A-XF86Search"
       ><action
           name="Execute"
         ><command
@@ -440,22 +440,22 @@ and back in -->
         ></action
       ></keybind
     ><keybind
-        key="W-m"
+        key="A-m"
       ><action
           name="Move"
       /></keybind
     ><keybind
-        key="W-r"
+        key="A-r"
       ><action
           name="Resize"
       /></keybind
     ><keybind
-        key="W-Up"
+        key="A-Up"
       ><action
           name="MaximizeFull"
       /></keybind
     ><keybind
-        key="W-Down"
+        key="A-Down"
       ><action
           name="UnmaximizeFull"
       /></keybind
@@ -465,7 +465,7 @@ and back in -->
           name="iconify"
       /></keybind
     ><!-- SCREEN RESOLUTION-DEPENDENT --><keybind
-        key="W-Left"
+        key="A-Left"
       ><action
           name="UnmaximizeFull"
       /><action
@@ -479,7 +479,7 @@ and back in -->
           name="MoveToEdgeWest"
       /></keybind
     ><keybind
-        key="W-Right"
+        key="A-Right"
       ><action
           name="UnmaximizeFull"
       /><action
@@ -527,7 +527,7 @@ and back in -->
         ></action
       ></keybind
     ><keybind
-        key="W-i"
+        key="A-i"
       ><action
           name="Execute"
         ><startupnotify
@@ -537,7 +537,7 @@ and back in -->
             >emacs</name
           ></startupnotify
         ><command
-          >emacs</command
+          >/home/cosmicexplorer/tools/emacs/src/emacs</command
         ></action
       ></keybind
     ><keybind
@@ -577,7 +577,7 @@ and back in -->
         ></action
       ></keybind
     ><keybind
-        key="W-c"
+        key="A-c"
       ><action
           name="Execute"
         ><startupnotify
@@ -591,7 +591,7 @@ and back in -->
         ></action
       ></keybind
     ><keybind
-        key="W-h"
+        key="A-h"
       ><action
           name="Execute"
         ><startupnotify
@@ -605,7 +605,7 @@ and back in -->
         ></action
       ></keybind
     ><!-- run scrot, then press print screen to save screenshot in home --><keybind
-        key="W-l"
+        key="A-l"
       ><action
           name="Execute"
         ><startupnotify
@@ -666,7 +666,7 @@ and back in -->
       ></keybind
     >
   <keybind
-        key="W-XF86AudioMute"
+        key="A-XF86AudioMute"
       ><action
           name="Execute"
         ><startupnotify
@@ -757,7 +757,7 @@ and back in -->
       ></keybind
     >
   <keybind
-        key="W-v"
+        key="A-v"
       ><action
           name="Execute"
         ><startupnotify
