@@ -440,22 +440,22 @@ and back in -->
         ></action
       ></keybind
     ><keybind
-        key="A-m"
+        key="W-S-m"
       ><action
           name="Move"
       /></keybind
     ><keybind
-        key="A-r"
+        key="W-S-r"
       ><action
           name="Resize"
       /></keybind
     ><keybind
-        key="A-Up"
+        key="W-S-Up"
       ><action
           name="MaximizeFull"
       /></keybind
     ><keybind
-        key="A-Down"
+        key="W-S-Down"
       ><action
           name="UnmaximizeFull"
       /></keybind
@@ -465,7 +465,7 @@ and back in -->
           name="iconify"
       /></keybind
     ><!-- SCREEN RESOLUTION-DEPENDENT --><keybind
-        key="A-Left"
+        key="W-S-Left"
       ><action
           name="UnmaximizeFull"
       /><action
@@ -479,7 +479,7 @@ and back in -->
           name="MoveToEdgeWest"
       /></keybind
     ><keybind
-        key="A-Right"
+        key="W-S-Right"
       ><action
           name="UnmaximizeFull"
       /><action
