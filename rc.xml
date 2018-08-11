@@ -296,7 +296,8 @@ and back in -->
           <enabled>true</enabled>
           <name>emacs</name>
         </startupnotify>
-        <command>/home/cosmicexplorer/tools/emacs/src/emacs</command>
+        <!-- NB: This refers to a script from my emacs fork at https://github.com/cosmicexplorer/emacs/tree/with-git-pull-make-script. -->
+        <command>"${HOME}/tools/emacs/git_pull_make_open"</command>
       </action>
     </keybind>
     <keybind key="C-S-q">
