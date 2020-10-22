@@ -235,6 +235,16 @@ and back in -->
         <command>xbacklight -set 100&gt;</command>
       </action>
     </keybind>
+    <keybind key="C-W-a">
+      <action name="Execute">
+        <command>~/.config/openbox/modify-transparency.sh --inc 0.1</command>
+      </action>
+    </keybind>
+    <keybind key="C-W-S-a">
+      <action name="Execute">
+        <command>~/.config/openbox/modify-transparency.sh --dec 0.1</command>
+      </action>
+    </keybind>
     <keybind key="W-S-m">
       <action name="Move"/>
     </keybind>
@@ -255,7 +265,7 @@ and back in -->
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>720</width>
+        <width>960</width>
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
@@ -263,7 +273,7 @@ and back in -->
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>720</width>
+        <width>960</width>
       </action>
       <action name="MoveToEdgeEast"/>
     </keybind>
@@ -288,21 +298,6 @@ and back in -->
           <name>synapse</name>
         </startupnotify>
         <command>synapse</command>
-      </action>
-    </keybind>
-    <keybind key="A-i">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>emacs</name>
-        </startupnotify>
-        <!-- NB: This refers to a script from my emacs fork at https://github.com/cosmicexplorer/emacs/tree/with-git-pull-make-script. -->
-        <command>"${HOME}/tools/emacs/git_pull_make_open"</command>
-      </action>
-    </keybind>
-    <keybind key="C-S-q">
-      <action name="Execute">
-        <command>true</command>
       </action>
     </keybind>
     <keybind key="C-A-t">
