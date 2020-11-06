@@ -1,0 +1,74 @@
+! General UI preferences for X applications.
+*foreground: green
+*background: black
+
+! Pointers!
+Xcursor.theme: xterm
+Xcursor.size: 16
+
+! Color fixes!
+! Just a few pointers!!! See https://lukas.zapletalovi.com/2013/07/hidden-gems-of-xterm.html
+XTerm.vt100.pointerColor: yellow
+XTerm.vt100.pointerColorBackground: red
+XTerm.vt100.cursorColor: yellow
+XTerm.vt100.cursorBlink: false
+
+! XTerm preferences (see xterm(1))
+
+! Input fixes!
+! This appears to already be the default.
+XTerm.termName: xterm-256color
+XTerm.vt100.locale: true
+XTerm.vt100.geometry: 80x25
+XTerm.vt100.faceName: Telegrama
+XTerm.vt100.faceSize: 12
+
+
+! Scroll fixes!
+XTerm.vt100.saveLines: 8096
+! Move multiple lines at a time -- faster (should be default).
+XTerm.vt100.jumpScroll: true
+! Scroll asynchronously (probably faster? it does not say).
+XTerm.vt100.multiScroll: true
+! Optimization when the entire screen contents have changed!
+XTerm.vt100.fastScroll: true
+! Scrolls inside vim/emacs -nw.
+XTerm.vt100.alternateScroll: true
+! This scroll bar is incredibly aggravating and requires right-clicking, then dragging downwards to
+! go "up". It should not be used except as a visual progress indicator.
+XTerm.vt100.scrollBar: true
+! The `.scrollbar` setting here is intentionally different from the above `.scrollBar` setting.
+XTerm.vt100.scrollbar.width: 4
+! Do not always keep shoving us back down to the bottom.
+XTerm.vt100.scrollTtyOutput: false
+! But do keep shoving us down when we have more to type!
+XTerm.vt100.scrollKey: true
+
+! Input fixes!
+! This makes it work like the osx alt key!
+XTerm.vt100.metaSendsEscape: false
+! For emacs backspace: https://wiki.archlinux.org/index.php/Xterm#Fix_the_backspace_key
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+! MAKE BELL GO DING!!
+XTerm.vt100.bellIsUrgent: true
+
+
+! Selection fixes!
+XTerm.vt100.selectToClipboard: true
+XTerm.vt100.highlightSelection: true
+XTerm.vt100.trimSelection: true
+
+! XTerm key bindings (see "KEY BINDINGS" in xterm(1))
+XTerm.vt100.translations: #override \n\
+    None<Key>Prior:		scroll-back(1,page) \n\
+    None<Key>Next:		scroll-forw(1,page) \n\
+    None<Key>Home:		scroll-to(begin) \n\
+    None<Key>End:		scroll-to(end) \n\
+    <Btn1Up>:			select-end(PRIMARY, CUT_BUFFER0) \n\
+    Mod4 <Key>c:		copy-selection(CLIPBOARD) \n\
+    Mod4 <Key>v:		insert-selection(CLIPBOARD) \n\
+    Alt <Key>v:			exec-formatted("xdg-open '%t'", PRIMARY) \n\
+    Ctrl Shift <Key> =:		smaller-vt-font() \n\
+    Ctrl <Key> =:		larger-vt-font() \n\
+    Ctrl <Key> 0:		set-vt-font(d)
