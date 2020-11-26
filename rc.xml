@@ -106,7 +106,7 @@ Copy the file to $HOME/.config/openbox/ instead. -->
       <name>Telegrama</name>
       <size>8</size>
       <weight>Normal</weight>
-      <slant>Normal</slant>
+      <slant>Italic</slant>
     </font>
   </theme>
   <desktops>

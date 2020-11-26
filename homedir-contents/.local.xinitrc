@@ -38,4 +38,3 @@ function setup-xrandr-monitors {
       ;;
   esac
 }
-

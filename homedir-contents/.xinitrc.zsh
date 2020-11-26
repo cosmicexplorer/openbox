@@ -2,7 +2,15 @@
 
 set -euxo pipefail
 
-source "$HOME/.zsh/functions.zsh"
+source "${ZSH_DIR}/functions.zsh"
+# Note these very specific files for tool integrations.
+source "${ZSH_DIR}/gpg.zsh"
+source "${ZSH_DIR}/ssh.zsh"
+source "${ZSH_DIR}/term.zsh"
+source "${ZSH_DIR}/x.zsh"
+
+# Declare the directory to search for scripts in.
+declare -r x_initrc_dir='/etc/X11/xinit/xinitrc.d'
 
 # Order system resources before user resources.
 declare -rA x_resources=(
@@ -11,9 +19,6 @@ declare -rA x_resources=(
   [userresources]="$HOME/.Xresources"
   [usermodmap]="$HOME/.Xmodmap"
 )
-
-# Declare the directory to search for scripts in.
-declare -r x_initrc_dir='/etc/X11/xinit/xinitrc.d'
 
 function with_merged_resources {
   local -r command_name="$1"
@@ -26,15 +31,32 @@ function with_merged_resources {
     else
       echo 'file not found!'
     fi
-  done | err
+  done | spew
 }
 
 # Merge defaults.
-
 function merge_xrdb {
   xrdb -merge "$1"
 }
 
+# NB: Usually run this after checking that [[ "$SHLVL" -le 1 ]].
+function summon-the-daemon {
+  # TODO: we may wish to load the module itself, but not execute any commands with it, allowing the
+  # user to do that later. A simple way to do that would be to have a marker in the file or next to
+  # the file saying whether it should execute some methods. Just brainstorming!
+  err "summoning ${1}..."
+  "${@:2}"
+}
+
+function summon-all-daemons {
+  summon-the-daemon 'ssh-agent' setup-ssh-agent-idempotent
+  summon-the-daemon 'gpg-agent' setup-gpg-agent-idempotent
+  summon-the-daemon 'xrandr' setup-xrandr-monitors
+  summon-the-daemon 'emacs' emacs &!
+  summon-the-daemon 'firefox' firefox-nightly &!
+}
+
+### Load X resources!
 # See zshparam(1) and zshexpn(1) to understand this incantation. All it does is find the keys named
 # "resources" with (I), then returns the key and value for those entries with (kv).
 with_merged_resources merge_xrdb ${(kv)x_resources[(I)*resources]}
@@ -42,7 +64,7 @@ with_merged_resources merge_xrdb ${(kv)x_resources[(I)*resources]}
 # Merge keymaps.
 with_merged_resources xmodmap ${(kv)x_resources[(I)*modmap]}
 
-# Source the global startup scripts.
+### Source the global startup scripts.
 find "$x_initrc_dir" -name '*.sh' \
   | while read source_script; do
       source "$source_script"
@@ -51,8 +73,8 @@ find "$x_initrc_dir" -name '*.sh' \
 # Apply the desired xrandr settings.
 source "$HOME/.local.xinitrc"
 
-setup-xrandr-monitors
+### Before everything else, make sure we summon the daemons for strength.
+summon-all-daemons
 
-set +euxo pipefail
-
+### BEGIN THE SESSION
 exec openbox-session
