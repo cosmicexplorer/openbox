@@ -264,18 +264,18 @@ and back in -->
     <keybind key="W-S-Left">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
+      <action name="MoveToEdgeWest"/>
       <action name="MoveResizeTo">
         <width>960</width>
       </action>
-      <action name="MoveToEdgeWest"/>
     </keybind>
     <keybind key="W-S-Right">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
+      <action name="MoveToEdgeEast"/>
       <action name="MoveResizeTo">
         <width>960</width>
       </action>
-      <action name="MoveToEdgeEast"/>
     </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="W-Tab">
@@ -408,7 +408,7 @@ and back in -->
           <enabled>true</enabled>
           <name>kbd-brightness</name>
         </startupnotify>
-        <command>~/.config/openbox/kb-light.py -5</command>
+        <command>~/.config/openbox/kb-light.py -20</command>
       </action>
     </keybind>
     <keybind key="XF86KbdBrightnessUp">
@@ -417,7 +417,7 @@ and back in -->
           <enabled>true</enabled>
           <name>kbd-brightness</name>
         </startupnotify>
-        <command>~/.config/openbox/kb-light.py +5</command>
+        <command>~/.config/openbox/kb-light.py +20</command>
       </action>
     </keybind>
     <keybind key="A-v">

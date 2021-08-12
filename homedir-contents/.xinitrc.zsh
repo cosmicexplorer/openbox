@@ -54,6 +54,7 @@ function summon-all-daemons {
   summon-the-daemon 'xrandr' setup-xrandr-monitors
   summon-the-daemon 'emacs' emacs &!
   summon-the-daemon 'firefox' firefox-nightly &!
+  summon-the-daemon 'ibus' ibus-daemon -drx
 }
 
 ### Load X resources!
